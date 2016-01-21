@@ -1,4 +1,4 @@
-
+ 
 /**
  * Write a description of class Calculadora here.
  * 
@@ -91,21 +91,16 @@ public class Calculadora
      */
     public boolean isPrime(int n)
     {
-        // Número por el que se divide.
-        num = 2;
-        while (num > n -1)
+        int contador = 2;
+        boolean primo=true;
+        while ((primo) && (contador != n))
         {
-            n = n / num;
-            num = num +1;
-            n = num2;
+            if (n % contador == 0)
+            {
+                primo = false;
+            }
+            contador = contador +1;
         }
-        if (num2 != 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return primo;
     }
 }
