@@ -13,6 +13,8 @@ public class Calculadora
     private int num;
     // Número sumado.
     private int num2;
+    // Guarda el mayor número.
+    private int mayor;
     
     public Calculadora()
     {
@@ -34,18 +36,53 @@ public class Calculadora
     
     
     /**
-     * Suma valores.
-     * 
+     * Suma el intervalo entre 0 y 10. 
      */
     public void sumValues()
     {
         num = 0;
         num2 = 0;
-        while (num2 <= 10)
+        while (num2 >= 0 && num2 <= 10)
         {
             num = num + num2;
             num2 = num2 + 1;
         }
         System.out.println(num);
+    }
+    
+    /**
+     * Suma el intervalo entre los números introducidos.
+     */
+    public int sumValuesInterval(int numA, int numB)
+    {
+        num = 0;
+        num2 = 0;
+        mayor = 0;
+        if (numA > numB)
+        {
+            num = numA;
+            num2 = numB;
+            mayor = numA;
+        }
+        else if (numA < numB)
+        {
+            num = numB;
+            num2 = numA;
+            mayor = numB;
+        }
+        else if (numA == numB)
+        {
+            System.out.println(numA);
+        }
+        else
+        {
+            System.out.println("-1");
+        }
+        while (num2 >= 0 && num2 <= mayor)
+        {
+            num = num + num2;
+            num2 = num2 + 1;
+        }
+        return num;
     }
 }
