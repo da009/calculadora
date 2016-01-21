@@ -31,4 +31,21 @@ public class Calculadora
             numero = numero + 5;
         }
     }
+    
+    
+    /**
+     * Suma valores.
+     * 
+     */
+    public void sumValues()
+    {
+        num = 0;
+        num2 = 0;
+        while (num2 <= 10)
+        {
+            num = num + num2;
+            num2 = num2 + 1;
+        }
+        System.out.println(num);
+    }
 }
