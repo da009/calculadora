@@ -85,4 +85,27 @@ public class Calculadora
         }
         return num;
     }
+    
+    /**
+     * Devuelve true si es primo y false si no lo es.
+     */
+    public boolean isPrime(int n)
+    {
+        // Número por el que se divide.
+        num = 2;
+        while (num > n -1)
+        {
+            n = n / num;
+            num = num +1;
+            n = num2;
+        }
+        if (num2 != 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
