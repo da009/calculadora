@@ -103,4 +103,39 @@ public class Calculadora
         }
         return primo;
     }
+    
+    /**
+     * Permite múltiplicar dos valores introducidos por teclado.
+     */
+    public void multiplicar(int factor1, int factor2)
+    {
+        int producto = 0;
+        int suma = 0;
+        if (factor1 > 0 && factor2 > 0)
+        {
+            if (factor2 > 1)
+            {
+                while (factor2 !=0)
+                {
+                    suma = suma + factor1;
+                    factor2 = factor2 - 1;
+                }
+                producto = suma;
+            }
+            else
+            {
+                producto = suma;
+            }
+            System.out.println("El resultado es: " + producto + ".");
+        }
+        else if (factor1 == 0 || factor2 == 0)
+        {
+            System.out.println("Los factores deben tener un valor superior a 0.");
+        }
+        else
+        {
+            System.out.println("-1");
+            System.out.println("Error, el valor debe ser positivo.");
+        }
+    }
 }
