@@ -124,7 +124,7 @@ public class Calculadora
             }
             else
             {
-                producto = suma;
+                producto = factor1;
             }
             System.out.println("El resultado es: " + producto + ".");
         }
