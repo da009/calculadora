@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Test()
+comment0.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ test.\r\n
+comment1.params=
+comment1.target=void\ testSumValuesInterval()
+comment1.text=\r\n\ M\u00E9todo\ para\ invocar\ de\ forma\ autom\u00E1tica\ el\ m\u00E9todo\ para\ sumar\ intervalos\ de\ la\ clase\r\n\ Calculadora.\r\n
+comment2.params=
+comment2.target=void\ testIsPrime()
+comment2.text=\r\n\ M\u00E9todo\ para\ invocar\ de\ forma\ autom\u00E1tica\ el\ m\u00E9todo\ para\ comprovar\ si\ un\ numero\ es\ primo\ \r\n\ de\ la\ clase\ Calculadora\r\n
+numComments=3

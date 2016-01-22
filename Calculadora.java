@@ -58,19 +58,19 @@ public class Calculadora
         num = 0;
         num2 = 0;
         mayor = 0;
-        if (numA > numB)
+        if (numA > numB && numA > 0)
         {
             num = numA;
             num2 = numB;
             mayor = numA;
         }
-        else if (numA < numB)
+        else if (numA < numB && numB > 0)
         {
             num = numB;
             num2 = numA;
             mayor = numB;
         }
-        else if (numA == numB)
+        else if (numA == numB && numA > 0)
         {
             System.out.println(numA);
         }
